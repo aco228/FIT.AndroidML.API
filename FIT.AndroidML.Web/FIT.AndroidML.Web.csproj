@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FIT.Android.Models\FIT.Android.Models.csproj" />
+    <ProjectReference Include="..\FIT.AndroidML.MLCore\FIT.AndroidML.MLCore.csproj" />
+  </ItemGroup>
+
+</Project>

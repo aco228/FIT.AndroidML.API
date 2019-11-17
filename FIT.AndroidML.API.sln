@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FIT.AndroidML.MLCore", "FIT.AndroidML.MLCore\FIT.AndroidML.MLCore.csproj", "{0A425510-68BB-41C4-87AF-C075F4C8DA83}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FIT.AndroidML.Trainer", "FIT.AndroidML.Trainer\FIT.AndroidML.Trainer.csproj", "{28A732DB-1CEA-4B0C-B28E-B092973943EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FIT.Android.Models", "FIT.Android.Models\FIT.Android.Models.csproj", "{65AE870C-20FF-40A0-B397-12A8D3AE1A72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FIT.AndroidML.Tests", "FIT.AndroidML.Tests\FIT.AndroidML.Tests.csproj", "{2E5E91CA-273D-4969-B10E-463B3E17D261}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FIT.AndroidML.Web", "FIT.AndroidML.Web\FIT.AndroidML.Web.csproj", "{E7EFC406-C3D3-4280-B21E-76659E2A17D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIT.AndroidML.Compressor", "FIT.AndroidML.Compressor\FIT.AndroidML.Compressor.csproj", "{D70D9AF9-7334-48B8-B580-5E70ED7770D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A425510-68BB-41C4-87AF-C075F4C8DA83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A425510-68BB-41C4-87AF-C075F4C8DA83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A425510-68BB-41C4-87AF-C075F4C8DA83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A425510-68BB-41C4-87AF-C075F4C8DA83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A732DB-1CEA-4B0C-B28E-B092973943EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A732DB-1CEA-4B0C-B28E-B092973943EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A732DB-1CEA-4B0C-B28E-B092973943EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A732DB-1CEA-4B0C-B28E-B092973943EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65AE870C-20FF-40A0-B397-12A8D3AE1A72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65AE870C-20FF-40A0-B397-12A8D3AE1A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65AE870C-20FF-40A0-B397-12A8D3AE1A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65AE870C-20FF-40A0-B397-12A8D3AE1A72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E5E91CA-273D-4969-B10E-463B3E17D261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5E91CA-273D-4969-B10E-463B3E17D261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5E91CA-273D-4969-B10E-463B3E17D261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5E91CA-273D-4969-B10E-463B3E17D261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7EFC406-C3D3-4280-B21E-76659E2A17D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7EFC406-C3D3-4280-B21E-76659E2A17D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7EFC406-C3D3-4280-B21E-76659E2A17D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7EFC406-C3D3-4280-B21E-76659E2A17D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70D9AF9-7334-48B8-B580-5E70ED7770D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70D9AF9-7334-48B8-B580-5E70ED7770D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70D9AF9-7334-48B8-B580-5E70ED7770D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70D9AF9-7334-48B8-B580-5E70ED7770D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF3A1C40-314C-4C69-AAD1-698EDF3B99DF}
+	EndGlobalSection
+EndGlobal

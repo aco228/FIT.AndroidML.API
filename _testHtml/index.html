@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <style type="text/css">
+    #image{
+      width: 600px; height: 600px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;;
+    }
+    #msg{
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+    <p id="msg"></p>
+    <p id="msg2"></p>
+    <input type="file" id="file" name="file" multiple />
+    <button id="upload">Upload</button>
+
+    <div id="image"></div>
+
+
+  <script type="text/javascript">
+    $(document).ready(function (e) {
+      $('#upload').on('click', function () {
+        var file_data = $('#file').prop('files')[0];
+        var form_data = new FormData();
+        form_data.append('file', file_data);
+
+        $.ajax({
+          url: 'https://[IP]:5001/api/ml/', 
+          dataType: 'text', 
+          cache: false,
+          contentType: false,
+          processData: false,
+          data: form_data,
+          type: 'post',
+          success: function (data) {
+            data = JSON.parse(data);
+
+            $('#image').css('background-image', 'url(https://[IP]:5001/api/images/' + data.fileName + ')');
+
+            if(data.response.isWinston)
+            {
+              $('#msg').css('color', 'green');
+              $('#msg').text('Winston dugi plavi tamni!!');
+            }
+            else
+            {
+              $('#msg').css('color', 'red');
+              $('#msg').text('Nije winston, ali more bit da je ' + data.response.normalName);
+            }
+
+            //$('#msg').html(data.message); 
+            $('#msg2').html(JSON.stringify(data.response));
+
+            console.log(data);
+          },
+          error: function (data) {
+            $('#msg').html(data); 
+          }
+          });
+        });
+
+    });
+  </script>
+
+</body>
+</html>
