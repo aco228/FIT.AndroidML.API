@@ -7,6 +7,7 @@ namespace FIT.AndroidML.Trainer
   {
     static void Main(string[] args)
     {
+      MLFileManager.SetPaths(typeof(Program).Assembly);
       MLTrainer trainer = new MLTrainer();
 
       trainer.LoadIntoMemory();

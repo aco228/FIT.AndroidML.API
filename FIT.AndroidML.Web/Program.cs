@@ -20,6 +20,7 @@ namespace FIT.AndroidML.Web
 
     public static void Main(string[] args)
     {
+      MLFileManager.SetPaths(typeof(Program).Assembly);
       PredictionEngine = new MLPredictionEngine();
 
       var configuration = new ConfigurationBuilder()
@@ -32,6 +33,11 @@ namespace FIT.AndroidML.Web
         IPEndPoint endPoint = socket.LocalEndPoint as IPEndPoint;
         IP = endPoint.Address.ToString();
       }
+
+      Console.WriteLine("Server at:");
+      Console.WriteLine(IP);
+      Console.WriteLine("");
+      Console.WriteLine("");
 
       var host = new WebHostBuilder()
           .UseKestrel()
