@@ -8,6 +8,7 @@ namespace FIT.AndroidML.MLCore
 {
   public static class MLFileManager
   {
+    public static string MachineName = Environment.MachineName; // DESKTOP-D0ILIG5
     public static string RootFolder = "";
     public static string AssetsRoot { get => RootFolder + @"assets\"; }
     public static string InputFolder { get => AssetsRoot + @"\inputs"; }
@@ -17,6 +18,12 @@ namespace FIT.AndroidML.MLCore
 
     public static void SetPaths(Assembly assembly)
     {
+      if (MachineName.Equals("DESKTOP-D0ILIG5"))
+      {
+        RootFolder = @"D:\github\FIT.AndroidML.API\FIT.AndroidML.API\";
+        return;
+      }
+
       var assemblyFolderPath = new FileInfo(assembly.Location).Directory.FullName;
       string[] parts = assemblyFolderPath.Split('\\');
 
