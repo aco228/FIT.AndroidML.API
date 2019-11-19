@@ -21,17 +21,11 @@ namespace FIT.AndroidML.MLCore
       string[] parts = assemblyFolderPath.Split('\\');
 
       string result = "";
-      bool foundFirst = false;
       bool done = false;
       foreach(string part in parts)
       {
         result += part + '\\';
-        if (part.Equals("FIT.AndroidML.API") && !foundFirst)
-        {
-          foundFirst = true;
-          continue;
-        }
-        if(part.Equals("FIT.AndroidML.API") && foundFirst)
+        if (part.Equals("FIT.AndroidML.API"))
         {
           done = true;
           break;
