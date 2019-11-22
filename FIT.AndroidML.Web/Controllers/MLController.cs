@@ -40,7 +40,7 @@ namespace FIT.AndroidML.Web.Controllers
           Status = true, Message = "ok", FileName = fileName, Response = response,
           Header = response.IsWinston ? "ЈЕСТЕ" : "НИЈЕ",
           SubHeader = response.IsWinston ? "Ово је винстон дуги тамни" : 
-            (response.IsUpaljac ? "Није винстон, али изгледа да је упаљач" : "Нешто непознато"),
+            (response.IsUpaljac ? "Није винстон, али изгледа да је упаљач" : "Ово је нешто непознато"),
 
           IsWinston = response.IsWinston,
           
